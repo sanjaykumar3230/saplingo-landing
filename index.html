@@ -103,5 +103,18 @@
         <a href="#" class="cta-button">Google Play</a>
         <a href="#" class="cta-button">App Store</a>
     </div>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelector(".cta-button").addEventListener("click", function () {
+            let email = document.querySelector(".email-input").value.trim();
+            if (email === "" || !email.includes("@")) {
+                alert("Please enter a valid email address.");
+            } else {
+                alert("Thank you for subscribing! We'll keep you updated. 🌱");
+                document.querySelector(".email-input").value = ""; // Clear input after subscribing
+            }
+        });
+    });
+</script>
 </body>
 </html>
