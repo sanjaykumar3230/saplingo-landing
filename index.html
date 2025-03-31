@@ -23,9 +23,11 @@
         }
         header img {
     display: block;
-    margin: 0 auto; /* Center the logo */
-    max-width: 100%; /* Ensures responsiveness */
-    height: auto;
+    margin: 0 auto;
+    width: 500px; /* Adjust width as needed */
+    height: 100px; /* Set a fixed height to crop */
+    object-fit: cover; /* Crops the image while maintaining aspect ratio */
+    overflow: hidden; /* Hides extra parts */
         }
 
         .container {
